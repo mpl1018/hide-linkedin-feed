@@ -1,0 +1,28 @@
+{
+    "name": "Hide LinkedIn feed",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Hide your linkedin feed.",
+    "author": "https://github.com/mpl1018",
+    "icons": {
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "background.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "http://*.linkedin.com/"
+    ]
+}
+
+
